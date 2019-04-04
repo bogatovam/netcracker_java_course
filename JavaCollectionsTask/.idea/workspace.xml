@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84fddeb-6d44-4cc0-a8e9-55ed851bb9c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/ILinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+            <state relative-caret-position="175">
+              <caret line="151" column="26" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="26" />
               <folding>
                 <element signature="docComment;class#List#0" />
                 <element signature="docComment;method#size#0;class#List#0" />
@@ -60,55 +56,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/ILinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="400">
+              <caret line="303" column="29" lean-forward="true" selection-start-line="303" selection-start-column="29" selection-end-line="303" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MyLinkedList#0;class#MyLinkedList#0" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
+                <element signature="n#!!block;n#contains#0;n#MyLinkedList#0" />
                 <element signature="e#354#355#0" expanded="true" />
                 <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
+                <element signature="e#2424#2425#0" expanded="true" />
+                <element signature="e#2448#2449#0" expanded="true" />
+                <element signature="e#6549#6550#0" expanded="true" />
+                <element signature="e#6576#6577#0" expanded="true" />
                 <element signature="class#Node#0;class#MyLinkedList#0" />
-                <element signature="class#ListIter#0;class#MyLinkedList#0" />
-                <element signature="method#remove#0;class#ListIter#0;class#MyLinkedList#0" />
-                <element signature="method#set#0;class#ListItr#0;class#MyLinkedList#0" />
-                <element signature="method#add#0;class#ListItr#0;class#MyLinkedList#0" />
-                <element signature="method#forEachRemaining#0;class#ListIter#0;class#MyLinkedList#0" />
+                <element signature="e#7585#7586#0" expanded="true" />
+                <element signature="e#7669#7670#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="154" column="38" selection-start-line="154" selection-start-column="4" selection-end-line="154" selection-end-column="38" />
+            <state relative-caret-position="509">
+              <caret line="901" column="28" lean-forward="true" selection-start-line="901" selection-start-column="28" selection-end-line="901" selection-end-column="28" />
               <folding>
                 <element signature="docComment;class#LinkedList#0" />
                 <element signature="e#3049#3204#0" />
@@ -127,42 +92,30 @@
                 <element signature="e#3507#3829#0" />
                 <element signature="e#3507#3921#0" />
                 <element signature="e#3927#3971#0" />
-                <element signature="e#3927#4255#0" />
                 <element signature="e#4261#4304#0" />
                 <element signature="e#4261#4578#0" />
                 <element signature="e#4584#4647#0" />
-                <element signature="e#4584#4991#0" />
                 <element signature="e#4997#5046#0" />
-                <element signature="e#4997#5438#0" />
                 <element signature="e#5444#5492#0" />
                 <element signature="e#5444#5882#0" />
                 <element signature="e#5888#5931#0" />
-                <element signature="e#6122#6159#1" />
-                <element signature="e#6165#6233#1" />
                 <element signature="e#6261#6297#1" />
                 <element signature="e#6303#6371#1" />
                 <element signature="e#6467#6638#0" />
                 <element signature="e#6467#6797#0" />
                 <element signature="e#6803#6972#0" />
-                <element signature="e#6803#7129#0" />
                 <element signature="e#7135#7322#0" />
-                <element signature="e#7135#7492#0" />
                 <element signature="e#7498#7683#0" />
                 <element signature="e#7498#7850#0" />
                 <element signature="e#7856#7977#0" />
+                <element signature="e#8008#8009#0" expanded="true" />
+                <element signature="e#8036#8037#0" expanded="true" />
                 <element signature="e#8043#8218#0" />
                 <element signature="e#8282#8709#0" />
                 <element signature="e#8794#8915#0" />
                 <element signature="e#8972#9237#0" />
                 <element signature="e#8972#9315#0" />
                 <element signature="e#9321#9994#0" />
-                <element signature="e#9321#10504#0" />
-                <element signature="e#10056#10262#1" />
-                <element signature="e#10117#10252#1" />
-                <element signature="e#10155#10238#1" />
-                <element signature="e#10268#10476#1" />
-                <element signature="e#10329#10466#1" />
-                <element signature="e#10369#10452#1" />
                 <element signature="e#10510#11155#0" />
                 <element signature="e#11254#12049#0" />
                 <element signature="e#11254#12975#0" />
@@ -172,13 +125,9 @@
                 <element signature="e#12790#12826#1" />
                 <element signature="e#12832#12903#1" />
                 <element signature="e#12981#13098#0" />
-                <element signature="e#12981#13646#0" />
                 <element signature="e#13133#13198#0" />
-                <element signature="e#13424#13573#1" />
                 <element signature="e#13690#13947#0" />
-                <element signature="e#13690#14050#0" />
                 <element signature="e#14056#14416#0" />
-                <element signature="e#14056#14606#0" />
                 <element signature="e#14612#15021#0" />
                 <element signature="e#14612#15224#0" />
                 <element signature="e#15230#15639#0" />
@@ -186,18 +135,9 @@
                 <element signature="e#15754#15831#0" />
                 <element signature="e#15934#16051#0" />
                 <element signature="e#16156#16370#0" />
-                <element signature="e#16477#16634#0" />
                 <element signature="e#16640#16799#0" />
                 <element signature="e#16805#16883#0" />
-                <element signature="e#16805#17279#0" />
-                <element signature="e#16989#17125#1" />
-                <element signature="e#17131#17273#1" />
                 <element signature="e#17311#17850#0" />
-                <element signature="e#17311#18327#0" />
-                <element signature="e#17932#18113#1" />
-                <element signature="e#17993#18103#1" />
-                <element signature="e#18119#18302#1" />
-                <element signature="e#18180#18292#1" />
                 <element signature="e#18333#18871#0" />
                 <element signature="e#18333#19353#0" />
                 <element signature="e#18960#19140#1" />
@@ -235,18 +175,10 @@
                 <element signature="e#24913#25050#1" />
                 <element signature="e#24953#25036#1" />
                 <element signature="e#25094#26214#0" />
-                <element signature="e#25094#26343#0" />
-                <element signature="e#26557#26721#0" />
-                <element signature="e#27632#28058#0" />
-                <element signature="e#28068#28262#0" />
-                <element signature="e#28272#28545#0" />
-                <element signature="e#28555#28932#0" />
-                <element signature="e#28727#28884#1" />
                 <element signature="e#29108#29362#0" />
                 <element signature="e#29208#29356#0" />
                 <element signature="e#29368#29397#0" />
                 <element signature="e#29496#29575#0" />
-                <element signature="e#29496#29921#0" />
                 <element signature="e#29927#30167#0" />
                 <element signature="e#30011#30072#0" />
                 <element signature="e#30110#30161#0" />
@@ -291,11 +223,26 @@
     <findStrings>
       <find>iter</find>
       <find>addAll</find>
-      <find>ListItr</find>
       <find>add</find>
-      <find>forEa</find>
       <find>ListI</find>
       <find>modCount</find>
+      <find>isE</find>
+      <find>isEmpty</find>
+      <find>`</find>
+      <find>contai</find>
+      <find>linkbe</find>
+      <find>equ</find>
+      <find>equals</find>
+      <find>index</find>
+      <find>get(</find>
+      <find>e</find>
+      <find>get(int</find>
+      <find>Iterator</find>
+      <find>Iterator&lt;E&gt; iterator()</find>
+      <find>Iterator&lt;E&gt;</find>
+      <find>ListItr</find>
+      <find>forEa</find>
+      <find>Iterator&lt;E&gt; iterator()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -309,8 +256,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -362,7 +309,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554355329689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554375264691" />
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="false" />
+      <visibility group="Maven goals" flag="false" />
+      <visibility group="Recent projects" flag="false" />
+      <visibility group="Run configurations" flag="false" />
+    </myKeys>
+    <option name="myCommands">
+      <command value="q" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -390,7 +348,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -399,7 +357,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" weight="0.32967034" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.51805335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -441,15 +399,36 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/AbstractSequentialList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="211" column="25" selection-start-line="211" selection-start-column="19" selection-end-line="211" selection-end-column="25" />
+        <state relative-caret-position="200">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/NoSuchElementException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/ILinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        <state relative-caret-position="175">
+          <caret line="151" column="26" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="26" />
           <folding>
             <element signature="docComment;class#List#0" />
             <element signature="docComment;method#size#0;class#List#0" />
@@ -486,20 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/ILinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="154" column="38" selection-start-line="154" selection-start-column="4" selection-end-line="154" selection-end-column="38" />
+        <state relative-caret-position="509">
+          <caret line="901" column="28" lean-forward="true" selection-start-line="901" selection-start-column="28" selection-end-line="901" selection-end-column="28" />
           <folding>
             <element signature="docComment;class#LinkedList#0" />
             <element signature="e#3049#3204#0" />
@@ -508,42 +477,30 @@
             <element signature="e#3507#3829#0" />
             <element signature="e#3507#3921#0" />
             <element signature="e#3927#3971#0" />
-            <element signature="e#3927#4255#0" />
             <element signature="e#4261#4304#0" />
             <element signature="e#4261#4578#0" />
             <element signature="e#4584#4647#0" />
-            <element signature="e#4584#4991#0" />
             <element signature="e#4997#5046#0" />
-            <element signature="e#4997#5438#0" />
             <element signature="e#5444#5492#0" />
             <element signature="e#5444#5882#0" />
             <element signature="e#5888#5931#0" />
-            <element signature="e#6122#6159#1" />
-            <element signature="e#6165#6233#1" />
             <element signature="e#6261#6297#1" />
             <element signature="e#6303#6371#1" />
             <element signature="e#6467#6638#0" />
             <element signature="e#6467#6797#0" />
             <element signature="e#6803#6972#0" />
-            <element signature="e#6803#7129#0" />
             <element signature="e#7135#7322#0" />
-            <element signature="e#7135#7492#0" />
             <element signature="e#7498#7683#0" />
             <element signature="e#7498#7850#0" />
             <element signature="e#7856#7977#0" />
+            <element signature="e#8008#8009#0" expanded="true" />
+            <element signature="e#8036#8037#0" expanded="true" />
             <element signature="e#8043#8218#0" />
             <element signature="e#8282#8709#0" />
             <element signature="e#8794#8915#0" />
             <element signature="e#8972#9237#0" />
             <element signature="e#8972#9315#0" />
             <element signature="e#9321#9994#0" />
-            <element signature="e#9321#10504#0" />
-            <element signature="e#10056#10262#1" />
-            <element signature="e#10117#10252#1" />
-            <element signature="e#10155#10238#1" />
-            <element signature="e#10268#10476#1" />
-            <element signature="e#10329#10466#1" />
-            <element signature="e#10369#10452#1" />
             <element signature="e#10510#11155#0" />
             <element signature="e#11254#12049#0" />
             <element signature="e#11254#12975#0" />
@@ -553,13 +510,9 @@
             <element signature="e#12790#12826#1" />
             <element signature="e#12832#12903#1" />
             <element signature="e#12981#13098#0" />
-            <element signature="e#12981#13646#0" />
             <element signature="e#13133#13198#0" />
-            <element signature="e#13424#13573#1" />
             <element signature="e#13690#13947#0" />
-            <element signature="e#13690#14050#0" />
             <element signature="e#14056#14416#0" />
-            <element signature="e#14056#14606#0" />
             <element signature="e#14612#15021#0" />
             <element signature="e#14612#15224#0" />
             <element signature="e#15230#15639#0" />
@@ -567,18 +520,9 @@
             <element signature="e#15754#15831#0" />
             <element signature="e#15934#16051#0" />
             <element signature="e#16156#16370#0" />
-            <element signature="e#16477#16634#0" />
             <element signature="e#16640#16799#0" />
             <element signature="e#16805#16883#0" />
-            <element signature="e#16805#17279#0" />
-            <element signature="e#16989#17125#1" />
-            <element signature="e#17131#17273#1" />
             <element signature="e#17311#17850#0" />
-            <element signature="e#17311#18327#0" />
-            <element signature="e#17932#18113#1" />
-            <element signature="e#17993#18103#1" />
-            <element signature="e#18119#18302#1" />
-            <element signature="e#18180#18292#1" />
             <element signature="e#18333#18871#0" />
             <element signature="e#18333#19353#0" />
             <element signature="e#18960#19140#1" />
@@ -616,18 +560,10 @@
             <element signature="e#24913#25050#1" />
             <element signature="e#24953#25036#1" />
             <element signature="e#25094#26214#0" />
-            <element signature="e#25094#26343#0" />
-            <element signature="e#26557#26721#0" />
-            <element signature="e#27632#28058#0" />
-            <element signature="e#28068#28262#0" />
-            <element signature="e#28272#28545#0" />
-            <element signature="e#28555#28932#0" />
-            <element signature="e#28727#28884#1" />
             <element signature="e#29108#29362#0" />
             <element signature="e#29208#29356#0" />
             <element signature="e#29368#29397#0" />
             <element signature="e#29496#29575#0" />
-            <element signature="e#29496#29921#0" />
             <element signature="e#29927#30167#0" />
             <element signature="e#30011#30072#0" />
             <element signature="e#30110#30161#0" />
@@ -660,40 +596,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="400">
+          <caret line="303" column="29" lean-forward="true" selection-start-line="303" selection-start-column="29" selection-end-line="303" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MyLinkedList#0;class#MyLinkedList#0" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
+            <element signature="n#!!block;n#contains#0;n#MyLinkedList#0" />
             <element signature="e#354#355#0" expanded="true" />
             <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="e#6549#6550#0" expanded="true" />
+            <element signature="e#6576#6577#0" expanded="true" />
             <element signature="class#Node#0;class#MyLinkedList#0" />
-            <element signature="class#ListIter#0;class#MyLinkedList#0" />
-            <element signature="method#remove#0;class#ListIter#0;class#MyLinkedList#0" />
-            <element signature="method#set#0;class#ListItr#0;class#MyLinkedList#0" />
-            <element signature="method#add#0;class#ListItr#0;class#MyLinkedList#0" />
-            <element signature="method#forEachRemaining#0;class#ListIter#0;class#MyLinkedList#0" />
+            <element signature="e#7585#7586#0" expanded="true" />
+            <element signature="e#7669#7670#0" expanded="true" />
           </folding>
         </state>
       </provider>

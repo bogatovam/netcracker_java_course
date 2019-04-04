@@ -1,6 +1,7 @@
 package com.netcracker.mylinkedlist;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public class MyLinkedList<E> implements ILinkedList<E> {
@@ -12,16 +13,16 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     }
 
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     public boolean contains(Object o) {
-        return false;
+        return indexOf(0) != -1;
     }
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
@@ -30,50 +31,126 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     }
 
     // Modification Operations
-    private void linkBefore(E e, Node<E> source) {
+    private void linkFirst(E e) {
+        Node<E> tmpNext = first;
+        Node<E> newNode = new Node<>(null, e, tmpNext);
+        first = newNode;
+        if (isEmpty()) {
+            last = newNode;
+        } else {
+            tmpNext.prev = newNode;
+        }
+        size++;
+    }
+
+    private void linkLast(E e) {
+        Node<E> tmpPrev = last;
+        Node<E> newNode = new Node<>(tmpPrev, e, null);
+        last = newNode;
+        if (isEmpty()) {
+            first = newNode;
+        } else {
+            tmpPrev.next = newNode;
+        }
+        size++;
+    }
+
+    private void linkBefore(E e, Node<E> before) {
+        Node<E> tmpPrev = before.prev;
+        Node<E> source = new Node<>(before.prev, e, before);
+        before.prev = source;
+        if (tmpPrev != null) {
+            tmpPrev.next = source;
+        } else first = source;
+        size++;
+    }
+
+    private void linkAfter(E e, Node<E> after) {
+        Node<E> tmpNext = after.next;
+        Node<E> source = new Node<>(after, e, tmpNext);
+        after.next = source;
+        if (tmpNext != null) {
+            tmpNext.prev = source;
+        } else last = source;
+        size++;
     }
 
     private E unlink(Node<E> node) {
-        return null;
+        //assign node != null
+        E item = node.item;
+        Node<E> prev = node.prev;
+        Node<E> next = node.next;
+        node.item = null;
+        if (prev == null) {
+            first = next;
+        } else {
+            prev.next = next;
+            node.prev = null;
+        }
+
+        if (next == null) {
+            last = prev;
+        } else {
+            next.prev = prev;
+            node.next = null;
+        }
+        size--;
+        return item;
     }
 
     @Override
     public boolean add(E e) {
-        return false;
+        linkLast(e);
+        return true;
     }
 
     public boolean addFirst(E e) {
-
-        return false;
+        linkFirst(e);
+        return true;
     }
 
     public boolean addLast(E e) {
-
-        return false;
+        linkLast(e);
+        return true;
     }
 
-    public E getFirst(E e) {
-
-        return e;
+    public E getFirst() {
+        return first.item;
     }
 
-    public E getLast(E e) {
-
-        return e;
+    public E getLast() {
+        if (last == null)
+            throw new NoSuchElementException();
+        return last.item;
     }
 
-    public boolean removeFirst(E e) {
-
-        return false;
+    public E removeFirst() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return unlink(first);
     }
 
-    public boolean removeLast(E e) {
-
-        return false;
+    public E removeLast() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return unlink(last);
     }
 
     @Override
     public boolean remove(Object o) {
+        if (o != null) {
+            for (Node<E> el = first; el != null; el = el.next) {
+                if (el.item.equals(o))
+                    unlink(el);
+            }
+        } else {
+            for (Node<E> el = first; el != null; el = el.next) {
+                if (el.item == null)
+                    unlink(el);
+            }
+        }
         return false;
     }
 
@@ -81,55 +158,117 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     // Bulk Modification Operations
     @Override
     public void clear() {
-
+        for (Node<E> el = first; el != null; el = el.next) {
+            unlink(el);
+        }
+        first = last = null;
+        size = 0;
     }
 
     // Comparison and hashing
     @Override
     public boolean equals(Object o) {
-        return false;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        MyLinkedList<E> that = (MyLinkedList<E>) o;
+
+        if (size != that.size) return false;
+
+        for (Node<E> el1 = first, el2 = that.first;
+             el1 != null && el2 != null;
+             el1 = el1.next, el2 = el2.next) {
+
+            if (el1.item != null && el2.item != null) {
+                if (!el1.item.equals(el2.item)) return false;
+            } else if ((el1.item == null && el2.item != null) || (el1.item != null && el2.item == null)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return 0;
+        int result = size;
+        for (Node<E> el = first; el != null; el = el.next) {
+            result = 31 * result + (el.item == null ? 0 : el.item.hashCode());
+        }
+        return result;
     }
 
+
     // Positional Access Operations
+    private boolean isElementIndex(int index) {
+        return index >= 0 && index < size;
+    }
+
     @Override
     public E get(int index) {
-        return null;
+        if (!isElementIndex(index))
+            throw new IndexOutOfBoundsException();
+        Node<E> result = first;
+        for (int i = 0; i < index; ++i) {
+            result = result.next;
+        }
+        return result.item;
     }
 
     @Override
     public E set(int index, E element) {
-        return null;
+        if (!isElementIndex(index))
+            throw new IndexOutOfBoundsException();
+        Node<E> changed = first;
+        for (int i = 0; i < index; ++i) {
+            changed = changed.next;
+        }
+        E oldValue = changed.item;
+        changed.item = element;
+        return oldValue;
     }
 
     @Override
     public void add(int index, E element) {
-
+        if (!isElementIndex(index))
+            throw new IndexOutOfBoundsException();
+        Node<E> before = first;
+        for (int i = 0; i < index; ++i) {
+            before = before.next;
+        }
+        linkBefore(element, before);
     }
 
     @Override
     public E remove(int index) {
-        return null;
+        if (!isElementIndex(index))
+            throw new IndexOutOfBoundsException();
+        Node<E> removed = first;
+        for (int i = 0; i < index; ++i) {
+            removed = removed.next;
+        }
+        E oldValue = removed.item;
+        unlink(removed);
+        return oldValue;
     }
 
     // Search Operations
     @Override
     public int indexOf(Object o) {
-        return 0;
+        Node<E> current = first;
+        for (int i = 0; i < size; ++i) {
+            if (current.item != null) {
+                if (current.item.equals(o))
+                    return i;
+            } else if (o == null)
+                return i;
+            current = current.next;
+        }
+        return -1;
     }
 
     @Override
     public Iterator<E> iterator() {
-        return null;
-    }
-
-    @Override
-    public void forEach(Consumer<? super E> action) {
-
+        return new ListItr();
     }
 
     private class Node<U> {
@@ -145,56 +284,83 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     }
 
     private class ListItr implements Iterator<E> {
-        private Node<E> current;
+        private Node<E> used;
         private Node<E> next;
         private int nextIndex;
 
+        public ListItr() {
+            used = null;
+            next = first;
+            nextIndex = 0;
+        }
+
+        public ListItr(int index) {
+            used = null;
+            if (index < size) {
+                Node<E> start = first;
+                for (int i = 0; i < index; ++i) {
+                    start = start.next;
+                }
+                next = start;
+                nextIndex = index;
+            } else {
+                next = null;
+            }
+        }
+
         @Override
         public boolean hasNext() {
-            return false;
+            return nextIndex < size;
         }
 
         public boolean hasPrevious() {
-            return false;
+            return nextIndex > 0;
         }
 
         @Override
         public E next() {
-            return null;
+            if (!hasNext())
+                throw new NoSuchElementException();
+            used = next;
+            next = next.next;
+            nextIndex++;
+            return used.item;
+        }
+
+        public E previous() {
+            if (!hasPrevious())
+                throw new NoSuchElementException();
+
+            used = next = (next == null ? last : next.prev);
+            nextIndex--;
+            return used.item;
         }
 
         @Override
         public void remove() {
-
+            if (used == null)
+                throw new IllegalStateException();
+            Node<E> tmp = used.next;
+            unlink(used);
+            if (next == used)
+                next = tmp;
+            else --nextIndex;
+            used = null;
         }
 
         public void set(E e) {
-
+            if (used == null)
+                throw new IllegalStateException();
+            used.item = e;
         }
 
         public void add(E e) {
-
-        }
-
-        @Override
-        public void forEachRemaining(Consumer<? super E> action) {
-
+            used = null;
+            if (next == null)
+                linkLast(e);
+            else
+                linkBefore(e, next);
+            nextIndex++;
         }
     }
 }
-
-//    Iterator<E> iterator();
-//    boolean containsAll(Collection<?> c);
-//
-//    boolean addAll(Collection<? extends E> c);
-//
-//    boolean addAll(int index, Collection<? extends E> c);
-//
-//    boolean removeAll(Collection<?> c);
-//
-//    boolean retainAll(Collection<?> c);
-//    // List Iterators
-//
-//    ListIterator<E> listIterator();
-//
-//    ListIterator<E> listIterator(int index);
