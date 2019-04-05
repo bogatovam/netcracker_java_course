@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db194ba-cc2a-41b4-b472-4ce2a422c482" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/JavaCollectionsTask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/ILinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/ILinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$ListItr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$ListItr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCollections.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -175,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554456349293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554465788088" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

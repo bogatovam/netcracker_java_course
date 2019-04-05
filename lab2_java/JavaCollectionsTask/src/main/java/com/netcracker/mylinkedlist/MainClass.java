@@ -45,7 +45,7 @@ public class MainClass {
         System.out.println("Delete from the ending\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.get(size/2);
+        list.get((int)(size/2));
         finishTime = System.nanoTime();
         System.out.println("Get middle element\t" + (finishTime - startTime) / 1000000.0);
 
@@ -110,7 +110,7 @@ public class MainClass {
         System.out.println("Delete from the ending\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.get(size/2);
+        list.get((int)(size/2));
         finishTime = System.nanoTime();
         System.out.println("Get middle element\t" + (finishTime - startTime) / 1000000.0);
 
