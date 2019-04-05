@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db194ba-cc2a-41b4-b472-4ce2a422c482" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaCollectionsTask/src/main/java/com/netcracker/mylinkedlist/IListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaCollectionsTask/src/main/java/com/netcracker/mylinkedlist/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/testcollections/TestCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/src/main/java/com/netcracker/mylinkedlist/ILinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/src/main/java/com/netcracker/mylinkedlist/ILinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/src/main/java/com/netcracker/mylinkedlist/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/JavaCollectionsTask.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/ILinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/ILinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$ListItr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$ListItr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollectionsTask/target/classes/com/netcracker/mylinkedlist/MyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCollections.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,10 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-973">
+            <state relative-caret-position="17">
               <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
               <folding>
                 <element signature="docComment;class#List#0" />
@@ -65,24 +65,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/testcollections/TestCollections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="151" selection-start-line="151" selection-end-line="156" />
+            <state relative-caret-position="-926">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
               <folding>
-                <element signature="method#measureList#0;class#TestCollections#0" />
-                <element signature="e#2015#2068#1" />
-                <element signature="e#2323#2384#1" />
-                <element signature="method#measureSet#0;class#TestCollections#0" />
-                <element signature="e#3573#3626#1" />
                 <element signature="method#measureMap#0;class#TestCollections#0" />
-                <element signature="e#5227#5311#1" />
                 <element signature="method#fill#0;class#TestCollections#0" />
-                <element signature="e#5967#5998#1" />
+                <element signature="e#5970#6021#1" />
                 <element signature="method#fill#1;class#TestCollections#0" />
-                <element signature="e#6127#6178#1" />
-                <element signature="method#main#0;class#TestCollections#0" />
               </folding>
             </state>
           </provider>
@@ -91,17 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3562">
+            <state relative-caret-position="3587">
               <caret line="239" selection-start-line="239" selection-end-line="239" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -120,10 +103,13 @@
       <find>toArr</find>
       <find>toA</find>
       <find>random.nextInt() % list.size()</find>
+      <find>the random</find>
+      <find>random.nextInt(size) % list.size()</find>
+      <find>Get random element</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -147,7 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,15 +158,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TestCollections" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestCollections" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testcollections" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554452673769" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554456349293" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -235,7 +229,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12783661" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12934947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -243,7 +237,6 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
@@ -254,6 +247,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -279,41 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3562">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/testcollections/TestCollections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="151" selection-start-line="151" selection-end-line="156" />
-          <folding>
-            <element signature="method#measureList#0;class#TestCollections#0" />
-            <element signature="e#2015#2068#1" />
-            <element signature="e#2323#2384#1" />
-            <element signature="method#measureSet#0;class#TestCollections#0" />
-            <element signature="e#3573#3626#1" />
-            <element signature="method#measureMap#0;class#TestCollections#0" />
-            <element signature="e#5227#5311#1" />
-            <element signature="method#fill#0;class#TestCollections#0" />
-            <element signature="e#5967#5998#1" />
-            <element signature="method#fill#1;class#TestCollections#0" />
-            <element signature="e#6127#6178#1" />
-            <element signature="method#main#0;class#TestCollections#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -323,7 +282,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-973">
+        <state relative-caret-position="17">
           <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
           <folding>
             <element signature="docComment;class#List#0" />
@@ -359,6 +318,33 @@
             <element signature="docComment;method#listIterator#1;class#List#0" />
             <element signature="docComment;method#subList#0;class#List#0" />
             <element signature="docComment;method#spliterator#0;class#List#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3587">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/testcollections/TestCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-926">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="method#measureMap#0;class#TestCollections#0" />
+            <element signature="method#fill#0;class#TestCollections#0" />
+            <element signature="e#5970#6021#1" />
+            <element signature="method#fill#1;class#TestCollections#0" />
           </folding>
         </state>
       </provider>

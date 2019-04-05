@@ -5,6 +5,8 @@ import java.util.*;
 public class TestCollections {
     static Random random = new Random();
     static final int size = 100000;
+    private static Double[] sourceArray = new Double[size];
+
 
     public static void measureList(List<Double> list) {
         double startTime, finishTime;
@@ -17,9 +19,9 @@ public class TestCollections {
 
         value = random.nextDouble();
         startTime = System.nanoTime();
-        list.add(random.nextInt(size) % list.size(), value);
+        list.add(size / 2, value);
         finishTime = System.nanoTime();
-        System.out.println("Insert in in the random\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Insert in in the middle\t" + (finishTime - startTime) / 1000000.0);
 
         value = random.nextDouble();
         startTime = System.nanoTime();
@@ -33,9 +35,9 @@ public class TestCollections {
         System.out.println("Delete from the beginning\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.remove(random.nextInt(size) % list.size());
+        list.remove(size / 2);
         finishTime = System.nanoTime();
-        System.out.println("Delete from the random\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Delete from the middle\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
         list.remove(list.size() - 1);
@@ -43,9 +45,9 @@ public class TestCollections {
         System.out.println("Delete from the ending\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.get(random.nextInt(size) % list.size());
+        list.get(size / 2);
         finishTime = System.nanoTime();
-        System.out.println("Get random element\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Get middle element\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
         for (Iterator<Double> iter = list.iterator(); iter.hasNext(); ) {
@@ -54,7 +56,7 @@ public class TestCollections {
         finishTime = System.nanoTime();
         System.out.println("Pass iterator from start to finish;\t" + (finishTime - startTime) / 1000000.0);
         startTime = System.nanoTime();
-        for (ListIterator<Double> iter =  list.listIterator(); iter.hasPrevious(); ) {
+        for (ListIterator<Double> iter = list.listIterator(); iter.hasPrevious(); ) {
             Double element = iter.previous();
         }
         finishTime = System.nanoTime();
@@ -151,13 +153,13 @@ public class TestCollections {
 
     public static void fill(Collection<Double> c) {
         for (int i = 0; i < size; ++i) {
-            c.add(random.nextDouble());
+            c.add(sourceArray[i]);
         }
     }
 
     public static void fill(Map<Double, Double> map) {
         for (int i = 0; i < size; ++i) {
-            map.put(random.nextDouble(), random.nextDouble());
+            map.put(sourceArray[i], sourceArray[size - i - 1]);
         }
     }
 
@@ -165,6 +167,10 @@ public class TestCollections {
         //ArrayList vs LinkedList
         List<Double> arrayList = new ArrayList<>();
         List<Double> linkedList = new LinkedList<>();
+
+        for (int i = 0; i < size; ++i) {
+            sourceArray[i] = random.nextDouble();
+        }
 
         fill(arrayList);
         fill(linkedList);
@@ -190,9 +196,9 @@ public class TestCollections {
         measureSet(treeSet);
 
         //HashMap vs LinkedHashMap vs TreeMap
-        Map<Double, Double>  hashMap= new HashMap<>();
+        Map<Double, Double> hashMap = new HashMap<>();
         Map<Double, Double> linkedHashMap = new LinkedHashMap<>();
-        Map<Double, Double>  treeMap= new TreeMap<>();
+        Map<Double, Double> treeMap = new TreeMap<>();
 
         fill(hashMap);
         fill(linkedHashMap);

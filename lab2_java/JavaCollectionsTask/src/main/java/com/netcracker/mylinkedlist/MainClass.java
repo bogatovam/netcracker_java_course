@@ -6,6 +6,7 @@ import java.util.*;
 public class MainClass {
     private static Random random = new Random();
     private static final int size = 100000;
+    private static Double[] sourceArray = new Double[size];
 
     public static void measureList(List<Double> list) {
         double startTime, finishTime;
@@ -18,9 +19,9 @@ public class MainClass {
 
         value = random.nextDouble();
         startTime = System.nanoTime();
-        list.add(random.nextInt(size) % list.size(), value);
+        list.add(size/2, value);
         finishTime = System.nanoTime();
-        System.out.println("Insert in in the random\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Insert in in the middle\t" + (finishTime - startTime) / 1000000.0);
 
         value = random.nextDouble();
         startTime = System.nanoTime();
@@ -34,9 +35,9 @@ public class MainClass {
         System.out.println("Delete from the beginning\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.remove(random.nextInt(size) % list.size());
+        list.remove(size/2);
         finishTime = System.nanoTime();
-        System.out.println("Delete from the random\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Delete from the middle\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
         list.remove(list.size() - 1);
@@ -44,9 +45,9 @@ public class MainClass {
         System.out.println("Delete from the ending\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.get(random.nextInt(size) % list.size());
+        list.get(size/2);
         finishTime = System.nanoTime();
-        System.out.println("Get random element\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Get middle element\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
         for (Iterator<Double> iter = list.iterator(); iter.hasNext(); ) {
@@ -83,9 +84,9 @@ public class MainClass {
 
         value = random.nextDouble();
         startTime = System.nanoTime();
-        list.add(random.nextInt(size) % list.size(), value);
+        list.add(size/2, value);
         finishTime = System.nanoTime();
-        System.out.println("Insert in in the random\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Insert in in the middle\t" + (finishTime - startTime) / 1000000.0);
 
         value = random.nextDouble();
         startTime = System.nanoTime();
@@ -99,9 +100,9 @@ public class MainClass {
         System.out.println("Delete from the beginning\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.remove(random.nextInt(size) % list.size());
+        list.remove(size/2);
         finishTime = System.nanoTime();
-        System.out.println("Delete from the random\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Delete from the middle\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
         list.remove(list.size() - 1);
@@ -109,9 +110,9 @@ public class MainClass {
         System.out.println("Delete from the ending\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
-        list.get(random.nextInt(size) % list.size());
+        list.get(size/2);
         finishTime = System.nanoTime();
-        System.out.println("Get random element\t" + (finishTime - startTime) / 1000000.0);
+        System.out.println("Get middle element\t" + (finishTime - startTime) / 1000000.0);
 
         startTime = System.nanoTime();
         for (Iterator<Double> iter = list.iterator(); iter.hasNext(); ) {
@@ -139,19 +140,24 @@ public class MainClass {
 
     public static void fill(Collection<Double> c) {
         for (int i = 0; i < size; ++i) {
-            c.add(random.nextDouble());
+            c.add(sourceArray[i]);
         }
     }
 
     public static void fill(ILinkedList<Double> c) {
         for (int i = 0; i < size; ++i) {
-            c.add(random.nextDouble());
+            c.add(sourceArray[i]);
         }
     }
 
     public static void main(String[] args) {
         MyLinkedList<Double> myLinkedList = new MyLinkedList<>();
         LinkedList<Double> linkedList = new LinkedList<>();
+
+
+        for (int i = 0; i < size; ++i) {
+            sourceArray[i] = random.nextDouble();
+        }
 
         fill(myLinkedList);
         fill(linkedList);
