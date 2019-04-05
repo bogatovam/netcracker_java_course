@@ -6,8 +6,9 @@ import java.util.function.UnaryOperator;
 public interface ILinkedList<E> extends Iterable<E> {
     int size();
 
-    <T> T[] toArray();
+    E[] toArray();
 
+    @Override
     String toString();
 
     // Modification Operations
@@ -39,4 +40,11 @@ public interface ILinkedList<E> extends Iterable<E> {
     // Search Operations
 
     int indexOf(Object o);
+
+    boolean contains(Object o);
+
+    Iterator<E> iterator();
+
+    IListIterator<E> listIterator();
+
 }

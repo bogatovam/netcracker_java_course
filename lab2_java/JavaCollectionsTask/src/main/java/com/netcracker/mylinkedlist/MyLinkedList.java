@@ -1,5 +1,7 @@
 package com.netcracker.mylinkedlist;
 
+import java.lang.reflect.ParameterizedType;
+import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.Consumer;
@@ -8,6 +10,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     int size = 0;
     Node<E> first;
     Node<E> last;
+    int modifyCount = 0;
 
     public MyLinkedList() {
     }
@@ -26,8 +29,25 @@ public class MyLinkedList<E> implements ILinkedList<E> {
     }
 
     @Override
-    public <T> T[] toArray() {
-        return null;
+    @SuppressWarnings("unchecked")
+    public E[] toArray() {
+        E[] array = (E[]) java.lang.reflect.Array.newInstance(first.item.getClass(), size);
+        int index = 0;
+        for (Node<E> el = first; el != null; el = el.next) {
+            array[index++] = el.item;
+        }
+        return array;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("List: { ");
+        for (Node<E> el = first; el != null; el = el.next) {
+            result.append(el.item == null ? "" : el.item.toString());
+        }
+        result.append(" }");
+        return result.toString();
     }
 
     // Modification Operations
@@ -40,6 +60,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         } else {
             tmpNext.prev = newNode;
         }
+        modifyCount++;
         size++;
     }
 
@@ -52,6 +73,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         } else {
             tmpPrev.next = newNode;
         }
+        modifyCount++;
         size++;
     }
 
@@ -62,6 +84,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         if (tmpPrev != null) {
             tmpPrev.next = source;
         } else first = source;
+        modifyCount++;
         size++;
     }
 
@@ -72,6 +95,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         if (tmpNext != null) {
             tmpNext.prev = source;
         } else last = source;
+        modifyCount++;
         size++;
     }
 
@@ -94,6 +118,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
             next.prev = prev;
             node.next = null;
         }
+        modifyCount++;
         size--;
         return item;
     }
@@ -140,20 +165,17 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
     @Override
     public boolean remove(Object o) {
-        if (o != null) {
-            for (Node<E> el = first; el != null; el = el.next) {
+        for (Node<E> el = first; el != null; el = el.next) {
+            if (o != null) {
                 if (el.item.equals(o))
                     unlink(el);
-            }
-        } else {
-            for (Node<E> el = first; el != null; el = el.next) {
+            } else {
                 if (el.item == null)
                     unlink(el);
             }
         }
         return false;
     }
-
 
     // Bulk Modification Operations
     @Override
@@ -163,6 +185,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         }
         first = last = null;
         size = 0;
+        modifyCount++;
     }
 
     // Comparison and hashing
@@ -271,6 +294,10 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         return new ListItr();
     }
 
+    public IListIterator<E> listIterator() {
+        return new ListItr();
+    }
+
     private class Node<U> {
         U item;
         Node<U> next;
@@ -283,10 +310,11 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         }
     }
 
-    private class ListItr implements Iterator<E> {
+    private class ListItr implements IListIterator<E> {
         private Node<E> used;
         private Node<E> next;
         private int nextIndex;
+        private int expectedModifyCount = modifyCount;
 
         public ListItr() {
             used = null;
@@ -319,6 +347,8 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
         @Override
         public E next() {
+            checkModifyCount();
+
             if (!hasNext())
                 throw new NoSuchElementException();
             used = next;
@@ -328,6 +358,8 @@ public class MyLinkedList<E> implements ILinkedList<E> {
         }
 
         public E previous() {
+            checkModifyCount();
+
             if (!hasPrevious())
                 throw new NoSuchElementException();
 
@@ -338,6 +370,7 @@ public class MyLinkedList<E> implements ILinkedList<E> {
 
         @Override
         public void remove() {
+            checkModifyCount();
             if (used == null)
                 throw new IllegalStateException();
             Node<E> tmp = used.next;
@@ -346,21 +379,33 @@ public class MyLinkedList<E> implements ILinkedList<E> {
                 next = tmp;
             else --nextIndex;
             used = null;
+            expectedModifyCount++;
         }
 
         public void set(E e) {
+            checkModifyCount();
+
             if (used == null)
                 throw new IllegalStateException();
             used.item = e;
         }
 
         public void add(E e) {
+            checkModifyCount();
+
             used = null;
             if (next == null)
                 linkLast(e);
             else
                 linkBefore(e, next);
             nextIndex++;
+            expectedModifyCount++;
         }
+
+        final void checkModifyCount() {
+            if (modifyCount != expectedModifyCount)
+                throw new ConcurrentModificationException();
+        }
+
     }
 }
