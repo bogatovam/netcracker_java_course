@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="Purchase")
+@Table(name="purchase")
 @Data
 @Builder
 @NoArgsConstructor
@@ -23,17 +23,17 @@ public class Purchase {
     private Date date;
 
     @ManyToOne
-    @Column(name = "seller")
+    @JoinColumn(name = "seller")
     @NonNull
     private Shop seller;
 
     @ManyToOne
-    @Column(name = "customer")
+    @JoinColumn(name = "customer")
     @NonNull
     private Customer customer;
 
     @ManyToOne
-    @Column(name = "book")
+    @JoinColumn(name = "book")
     @NonNull
     private Book book;
 

@@ -1,5 +1,9 @@
 package com.netcracker.config;
 
+import com.netcracker.model.Book;
+import com.netcracker.model.Customer;
+import com.netcracker.model.Purchase;
+import com.netcracker.model.Shop;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -37,5 +41,23 @@ public class SpringConfig {
 
         return dataSource;
     }
+    @Bean
+    public Class<Book> bookClassBean(){
+        return Book.class;
+    }
 
+    @Bean
+    public Class<Customer> customerClassBean(){
+        return Customer.class;
+    }
+
+    @Bean
+    public Class<Shop> shopClassBean(){
+        return Shop.class;
+    }
+
+    @Bean
+    public Class<Purchase> purchaseClassBean(){
+        return Purchase.class;
+    }
 }

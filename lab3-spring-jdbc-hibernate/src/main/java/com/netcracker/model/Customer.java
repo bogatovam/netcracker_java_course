@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Customer")
+@Table(name="customer")
 @Data
 @Builder
 @NoArgsConstructor
@@ -18,7 +18,7 @@ public class Customer {
     @JoinColumn(name="id")
     private Integer id;
 
-    @Column(name = "last-name")
+    @Column(name = "last_name")
     @NonNull
     private String lastName;
 

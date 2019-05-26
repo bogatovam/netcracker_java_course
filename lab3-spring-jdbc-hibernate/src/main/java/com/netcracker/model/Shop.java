@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Shop")
+@Table(name="shop")
 @Data
 @Builder
 @NoArgsConstructor
@@ -20,7 +20,7 @@ public class Shop {
 
     @Column(name = "name")
     @NonNull
-    private String lastName;
+    private String name;
 
     @Column(name = "district")
     @NonNull

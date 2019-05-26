@@ -9,5 +9,6 @@ public interface CrudDao<T> {
     void update(T model);
     void delete(Integer id);
 
+    Long count();
     List<T> findAll();
 }

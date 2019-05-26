@@ -1,49 +1,35 @@
 package com.netcracker.dao.impl;
 
-import com.netcracker.dao.api.BaseDao;
 import com.netcracker.dao.api.CustomerDao;
 import com.netcracker.model.Customer;
 import lombok.Data;
 import org.hibernate.Query;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Data
 @Repository("customerDao")
 @Transactional
-public class CustomerDaoImpl extends BaseDao implements CustomerDao {
+public class CustomerDaoImpl extends BaseDao<Customer> implements CustomerDao {
+
     @Override
-    public List<String> findAllByLastName(String lastName) {
-        Query query = getSession().createQuery("select district from Customer");
-        return (List<String>)query.list();
+    public List<String> findUniqueDistrict() {
+        return getSession().createQuery("SELECT distinct district FROM Customer").list();
     }
 
     @Override
-    public Optional<Customer> find(Integer id) {
-        return Optional.empty();
-    }
+    public Map<String, Double> findNameAndSaleByDistrict(String district) {
+        Map<String, Double> result = new HashMap<>();
 
-    @Override
-    public void save(Customer model) {
-
-    }
-
-    @Override
-    public void update(Customer model) {
-
-    }
-
-    @Override
-    public void delete(Integer id) {
-
-    }
-
-    @Override
-    public List<Customer> findAll() {
-        return null;
+        List<Customer> customers =
+                getSession().createQuery("FROM Customer WHERE district = :district")
+                        .setString("district", district).list();
+        customers.forEach(customer -> result.put(customer.getLastName(), customer.getSale()));
+        return result;
     }
 }
