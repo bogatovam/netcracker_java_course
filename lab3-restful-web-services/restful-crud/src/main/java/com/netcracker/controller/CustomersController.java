@@ -31,7 +31,7 @@ public class CustomersController {
         return crudService.getCustomer(id);
     }
 
-    @PostMapping("/buyer/")
+    @PostMapping("/buyer")
     @ApiOperation(value = "")
     Customer  createCustomer(
             @ApiParam(value = "")
