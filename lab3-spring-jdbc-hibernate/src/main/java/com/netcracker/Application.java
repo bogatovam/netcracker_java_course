@@ -1,6 +1,7 @@
 package com.netcracker;
 
 import com.netcracker.config.SpringConfig;
+import com.netcracker.dao.api.PurchaseDao;
 import com.netcracker.model.Book;
 import com.netcracker.model.Customer;
 import com.netcracker.model.Purchase;
@@ -23,20 +24,24 @@ public class Application {
                 new AnnotationConfigApplicationContext(SpringConfig.class);
         CrudService crudService = (CrudService) context.getBean("crudService");
         DisplayUniqueDataService task2Service = (DisplayUniqueDataService) context.getBean("task2Service");
-        logger.info(task2Service.findUniqueBookNames().toString());
-        logger.info(task2Service.findUniqueBookPrices().toString());
-        logger.info(task2Service.findUniqueCustomerDistrict().toString());
-        logger.info(task2Service.findUniquePurchaseMonth().toString());
-        logger.info(task2Service.findNameAndSaleByDistrict("Nizhegorodskiy").toString());
-
-        List<String> districts = new ArrayList<>();
-        districts.add("Sormovskiy");
-        districts.add("Sovetskiy");
-        logger.info(task2Service.findNamesByDistricts(districts).toString());
-        logger.info(task2Service.findNameAndPriceByNameAndPrice("Windows", 20000).toString());
-
+        // logger.info(task2Service.findUniqueBookNames().toString());
+        // logger.info(task2Service.findUniqueBookPrices().toString());
+        // logger.info(task2Service.findUniqueCustomerDistrict().toString());
+        // logger.info(task2Service.findUniquePurchaseMonth().toString());
+        // logger.info(task2Service.findNameAndSaleByDistrict("Nizhegorodskiy").toString());
+//
+        // List<String> districts = new ArrayList<>();
+        // districts.add("Sormovskiy");
+        // districts.add("Sovetskiy");
+        // logger.info(task2Service.findNamesByDistricts(districts).toString());
+        // logger.info(task2Service.findNameAndPriceByNameAndPrice("Windows", 20000).toString());
+        // logger.info(task2Service.findCustomersAndShopsNames().toString());
         // fillBase(crudService);
-
+        // logger.info(task2Service.getAllDateLastNameSaleNameCount());
+       //  logger.info(task2Service.findIdLastNameDateByPrice(60000).toString());
+        // logger.info(task2Service.findLastNameDistrictDateByMonth(3).toString());
+          // logger.info(task2Service.findShopsByDistrictAndSale().toString());
+           logger.info(task2Service.findPurchaseByBooksStorageAndCount().toString());
     }
 
     public static void fillBase(CrudService crudService) {
