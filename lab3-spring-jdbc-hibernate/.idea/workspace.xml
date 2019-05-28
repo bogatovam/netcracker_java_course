@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48210401-a9db-4f71-88ba-830dbd3f42f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/api/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/api/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/api/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/api/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/api/PurchaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/api/PurchaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/PurchaseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/PurchaseDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/service/api/DisplayUniqueDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/service/api/DisplayUniqueDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netcracker/service/impl/DisplayUniqueDataServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netcracker/service/impl/DisplayUniqueDataServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/netcracker/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/netcracker/Application.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/PurchaseDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
-              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -127,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/BookDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="34" column="116" lean-forward="true" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="116" />
+              <caret line="34" column="116" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="116" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -413,16 +403,15 @@
       <updated>1558800233575</updated>
       <workItem from="1558800236599" duration="25953000" />
       <workItem from="1558887734262" duration="725000" />
-      <workItem from="1558978059008" duration="13812000" />
+      <workItem from="1558978059008" duration="15740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40490000" />
+    <option name="totallyTimeSpent" value="42418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -442,7 +431,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.31423897" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.31423897" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -726,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/BookDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="34" column="116" lean-forward="true" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="116" />
+          <caret line="34" column="116" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,7 +749,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/netcracker/dao/impl/PurchaseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
-          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
         </state>
       </provider>
     </entry>
