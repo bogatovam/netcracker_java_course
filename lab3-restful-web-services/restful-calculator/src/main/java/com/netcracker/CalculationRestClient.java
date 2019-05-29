@@ -12,7 +12,7 @@ public class CalculationRestClient {
     public static void main(String[] args) {
 
         Client client = ClientBuilder.newClient();
-        WebTarget webTarget = client.target("http://localhost:8080/calc");
+        WebTarget webTarget = client.target("http://localhost:8080/rest/calc");
 
         Scanner scanner = new Scanner(System.in);
 
