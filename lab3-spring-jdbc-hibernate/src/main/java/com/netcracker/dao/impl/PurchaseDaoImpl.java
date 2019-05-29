@@ -71,9 +71,9 @@ public class PurchaseDaoImpl extends BaseDao<Purchase> implements PurchaseDao {
                 "ORDER BY p.date")
                 .setInteger("month", month)
                 .list();
-        purchases.forEach(p -> result.add("Customers lastName:  " + p.getCustomer().getLastName() +
+        purchases.forEach(p -> result.add("\n Customers lastName:  " + p.getCustomer().getLastName() +
                 ", Customers district: " + p.getCustomer().getDistrict() +
-                ", Purchases date:  " + p.getDate().toString() + "\n"));
+                ", Purchases date:  " + p.getDate().toString() ));
         return result;
     }
 
@@ -95,10 +95,10 @@ public class PurchaseDaoImpl extends BaseDao<Purchase> implements PurchaseDao {
                 "p.book.count > 10 "+
                 "ORDER BY p.price ASC")
                 .list();
-        purchases.forEach(p -> result.add("Books name:  " + p.getBook().getName() +
+        purchases.forEach(p -> result.add("\n Books name:  " + p.getBook().getName() +
                 ", Books storage: " + p.getBook().getStorage() +
                 ", Books count:  " + p.getBook().getCount() +
-                ", Price: "  + p.getPrice()+"\n"));
+                ", Price: "  + p.getPrice()));
         return result;
     }
 }

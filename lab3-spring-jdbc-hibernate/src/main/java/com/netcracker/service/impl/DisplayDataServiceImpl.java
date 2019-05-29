@@ -5,22 +5,21 @@ import com.netcracker.dao.api.CustomerDao;
 import com.netcracker.dao.api.PurchaseDao;
 import com.netcracker.dao.api.ShopDao;
 import com.netcracker.model.Shop;
-import com.netcracker.service.api.DisplayUniqueDataService;
+import com.netcracker.service.api.DisplayDataService;
 import javafx.util.Pair;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 @Data
-@Service("task2Service")
+@Service("dataService")
 @RequiredArgsConstructor
-public class DisplayUniqueDataServiceImpl implements DisplayUniqueDataService {
+public class DisplayDataServiceImpl implements DisplayDataService {
     @Autowired
     BookDao bookDao;
 

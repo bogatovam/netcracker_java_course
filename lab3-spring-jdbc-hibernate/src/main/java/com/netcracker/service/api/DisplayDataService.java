@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public interface DisplayUniqueDataService {
+public interface DisplayDataService {
     List<String> findUniqueBookNames();
 
     List<Integer> findUniqueBookPrices();
@@ -32,6 +32,6 @@ public interface DisplayUniqueDataService {
 
     List<Shop> findShopsByDistrictAndSale();
 
-    public List<String> findPurchaseByBooksStorageAndCount() ;
+    public List<String> findPurchaseByBooksStorageAndCount();
 
-    }
+}
