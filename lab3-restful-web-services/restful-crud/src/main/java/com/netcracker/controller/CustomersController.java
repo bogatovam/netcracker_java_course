@@ -18,37 +18,37 @@ public class CustomersController {
     CrudService crudService;
 
     @GetMapping("/buyer")
-    @ApiOperation(value = "")
+    @ApiOperation(value = "Return list of customers")
     List<Customer> getAllCustomers() {
         return crudService.getAllCustomers();
     }
 
     @GetMapping("/buyer/{id}")
-    @ApiOperation(value = "")
+    @ApiOperation(value = "Return customer by id")
     Customer getCustomerById(
-            @ApiParam(value = "")
+            @ApiParam(value = "customers id")
             @PathVariable Integer id) {
         return crudService.getCustomer(id);
     }
 
     @PostMapping("/buyer")
-    @ApiOperation(value = "")
+    @ApiOperation(value = "Create customer")
     Customer  createCustomer(
-            @ApiParam(value = "")
+            @ApiParam(value = "Customers model")
             @RequestBody Customer customer) {
         return crudService.createCustomer(customer);
     }
 
     @DeleteMapping("/buyer")
-    @ApiOperation(value = "")
+    @ApiOperation(value = "Delete all customers from DB")
     ResponseEntity<?> deleteAllCustomers() {
         return crudService.deleteAllCustomers();
     }
 
     @DeleteMapping("/buyer/{id}")
-    @ApiOperation(value = "")
+    @ApiOperation(value = "Delete customer by id")
     ResponseEntity<?> deleteCustomerById(
-            @ApiParam(value = "")
+            @ApiParam(value = "customers id")
             @PathVariable Integer id) {
         return crudService.deleteCustomer(id);
     }

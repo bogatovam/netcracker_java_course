@@ -1,4 +1,6 @@
 package com.netcracker.model;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 import javax.persistence.*;
@@ -10,11 +12,13 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
+@ApiModel(value = "Describes customer")
 public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JoinColumn(name="id")
+    @ApiModelProperty(hidden = true)
     private Integer id;
 
     @Column(name = "last_name")
